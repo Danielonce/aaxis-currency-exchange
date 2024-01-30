@@ -59,7 +59,7 @@ function App() {
         <CurrencyInput value={outputCurrency} setValue={setOutputCurrency} label="A convertir en" />
         <AmountInput />
       </Grid>
-      {initialAmount && <Typography color='#DD9932' margin={3}>{(resultCurrency*initialAmount).toFixed(2)} {outputCurrency}</Typography>}
+      {initialAmount && <Typography color='#DD9932' margin={3}>{(resultCurrency*initialAmount).toFixed(2)} {outputCurrency.split(" ")[0]}</Typography>}
     </Container>
   )
 }
